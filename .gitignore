@@ -8,7 +8,7 @@ target/
 !log/
 !**/*.log
 !**/*.log.*
-!*.log
+!*.log.*
 
 ### STS ###
 .apt_generated

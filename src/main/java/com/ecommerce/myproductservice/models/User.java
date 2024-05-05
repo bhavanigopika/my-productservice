@@ -12,6 +12,8 @@ import lombok.Setter;
 import java.util.UUID;
 @Getter
 @Setter
+// @Entity(name = "ecomm_user")
+// @MappedSuperclass
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
 public class User {

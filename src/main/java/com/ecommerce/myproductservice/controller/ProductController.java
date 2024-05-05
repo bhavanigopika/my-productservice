@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping
+@RequestMapping("/products")
 public class ProductController {
     private final ProductService prodServ;
 
@@ -32,6 +32,11 @@ public class ProductController {
     public @ResponseBody List<GetProductDto> getAllProducts() {
         return prodServ.getAllProducts();
     }
+    //just try to create products, so nothing...
+    /*public String createProduct(){
+        return "Product created";
+    }*/
+    //@RequestBody - converts received json to Product java object
     @PostMapping("")
     public String createProduct(@RequestBody Product prod){
         System.out.println(prod.getPrice());

@@ -20,6 +20,7 @@ public class Product {
 }
 @Getter
 @Setter
+@Data
 class Rating{
     private BigDecimal rate;
     private int count;
